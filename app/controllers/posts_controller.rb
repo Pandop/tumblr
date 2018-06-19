@@ -20,7 +20,6 @@ class PostsController < ApplicationController
       flash[:success] = "Post was successfully saved."
       redirect_to(posts_path)
     else
-      flash.now[:error] = "Title/Body cannot be blank."
       render('new')
     end
   end
